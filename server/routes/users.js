@@ -13,7 +13,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-/* POST a user listing. */
+/* POST a new user. */
 router.post("/", async(req,res) => {
   try{
       const { nombre } = req.body;
@@ -25,7 +25,7 @@ router.post("/", async(req,res) => {
   }
 });
 
-/* PUT a user listing. */
+/* PUT a existing user. */
 router.put("/:id", async(req,res) => {
   try {
       const { id } = req.params;
@@ -39,7 +39,7 @@ router.put("/:id", async(req,res) => {
   }
 });
 
-/* DELETE a user listing. */
+/* DELETE a existing user. */
 router.delete("/:id", async(req,res) =>{
   try {
       const { id } = req.params;
