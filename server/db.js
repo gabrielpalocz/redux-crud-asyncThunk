@@ -13,7 +13,7 @@ const pool = new Pool({
   port: pgport,
 });
 
-//Example creating a table
+//Creating a example table if not exist
 pool.query(`
   CREATE TABLE IF NOT EXISTS users (
       id          bigserial UNIQUE,

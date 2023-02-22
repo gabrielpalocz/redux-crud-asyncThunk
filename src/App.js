@@ -1,11 +1,13 @@
 import './App.css';
-import { Counter } from './store/feactures/counter/counter';
-import { UserCrud } from './store/feactures/userCrud/userCrud';
+import { Counter } from './components/counter';
+import { UserCrud } from './components/userCrud';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+    <h1>Redux example</h1>  
+    <Counter />
+    <h1>CRUD asyncThunk</h1>  
       <UserCrud />
     </div>
   );

@@ -1,6 +1,3 @@
-/**
- * Modules imports
- */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 /**
@@ -75,7 +72,7 @@ export const deleteUser = createAsyncThunk('users/deleteUser', async (userToDele
 )
 
 /**
- * Redux Slice
+ * Redux Slice to work with the CRUD data
  */
 export const userCrudSlice = createSlice({
     name: 'userCrud',

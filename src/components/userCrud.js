@@ -1,9 +1,6 @@
-/**
- * Modules imports
- */
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { getUsers, addNewUser, editUser, deleteUser } from './userCrudSlice'
+import { getUsers, addNewUser, editUser, deleteUser } from '../store/feactures/userCrud/userCrudSlice'
 
 
 /**
